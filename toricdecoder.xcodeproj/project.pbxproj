@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC3A3BB9255C990800CCE6A5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3BB8255C990800CCE6A5 /* main.cpp */; };
+		FC7DFF4925674D8B000C468C /* PMmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF4125674B52000C468C /* PMmain.cpp */; };
+		FC7DFF4B25674D9E000C468C /* PMinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF4225674B52000C468C /* PMinit.cpp */; };
+		FC7DFF4D25674DA1000C468C /* PMrepair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF4325674B52000C468C /* PMrepair.cpp */; };
+		FC7DFF4F25674DAF000C468C /* PMexpand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF3E25674B52000C468C /* PMexpand.cpp */; };
+		FC7DFF5125674DB1000C468C /* PMinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF3D25674B52000C468C /* PMinterface.cpp */; };
+		FC7DFF5325674DB4000C468C /* PMduals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF3B25674B52000C468C /* PMduals.cpp */; };
+		FC7DFF5525674DB6000C468C /* PMshrink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF3825674B52000C468C /* PMshrink.cpp */; };
+		FC7DFF5725674DB8000C468C /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF3C25674B52000C468C /* misc.cpp */; };
+		FC7DFF6025674DD9000C468C /* instances.inc in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF5A25674DD9000C468C /* instances.inc */; };
+		FC7DFF6125674DD9000C468C /* MinCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7DFF5E25674DD9000C468C /* MinCost.cpp */; };
+		FCAB53E9256DDCC00015AAF3 /* ToricLattice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCAB53E4256DD5D10015AAF3 /* ToricLattice.cpp */; };
+		FCAB53F0256DE48A0015AAF3 /* ClassicalFractalLattice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCAB53EB256DE0E00015AAF3 /* ClassicalFractalLattice.cpp */; };
+		FCC3CB1125802D0200231FF8 /* UnionFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCC3CB0F25802D0100231FF8 /* UnionFind.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC3A3BB3255C990800CCE6A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC3A3BB5255C990800CCE6A5 /* toricdecoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = toricdecoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3A3BB8255C990800CCE6A5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FC7DFF3825674B52000C468C /* PMshrink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMshrink.cpp; sourceTree = "<group>"; };
+		FC7DFF3A25674B52000C468C /* PQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
+		FC7DFF3B25674B52000C468C /* PMduals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMduals.cpp; sourceTree = "<group>"; };
+		FC7DFF3C25674B52000C468C /* misc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		FC7DFF3D25674B52000C468C /* PMinterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMinterface.cpp; sourceTree = "<group>"; };
+		FC7DFF3E25674B52000C468C /* PMexpand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMexpand.cpp; sourceTree = "<group>"; };
+		FC7DFF3F25674B52000C468C /* timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		FC7DFF4025674B52000C468C /* LCA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCA.h; sourceTree = "<group>"; };
+		FC7DFF4125674B52000C468C /* PMmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMmain.cpp; sourceTree = "<group>"; };
+		FC7DFF4225674B52000C468C /* PMinit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMinit.cpp; sourceTree = "<group>"; };
+		FC7DFF4325674B52000C468C /* PMrepair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMrepair.cpp; sourceTree = "<group>"; };
+		FC7DFF4425674B52000C468C /* block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		FC7DFF4525674B52000C468C /* PerfectMatching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectMatching.h; sourceTree = "<group>"; };
+		FC7DFF4625674B52000C468C /* PMimplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMimplementation.h; sourceTree = "<group>"; };
+		FC7DFF5A25674DD9000C468C /* instances.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = instances.inc; sourceTree = "<group>"; };
+		FC7DFF5B25674DD9000C468C /* MinCost.cpp.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MinCost.cpp.orig; sourceTree = "<group>"; };
+		FC7DFF5C25674DD9000C468C /* MinCost.cpp.rej */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MinCost.cpp.rej; sourceTree = "<group>"; };
+		FC7DFF5D25674DD9000C468C /* MinCost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinCost.h; sourceTree = "<group>"; };
+		FC7DFF5E25674DD9000C468C /* MinCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinCost.cpp; sourceTree = "<group>"; };
+		FC7DFF5F25674DD9000C468C /* p */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p; sourceTree = "<group>"; };
+		FCAB53E1256DD0300015AAF3 /* GeneralLattice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GeneralLattice.hpp; sourceTree = "<group>"; };
+		FCAB53E3256DD5B90015AAF3 /* ToricLattice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ToricLattice.hpp; sourceTree = "<group>"; };
+		FCAB53E4256DD5D10015AAF3 /* ToricLattice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ToricLattice.cpp; sourceTree = "<group>"; };
+		FCAB53EB256DE0E00015AAF3 /* ClassicalFractalLattice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassicalFractalLattice.cpp; sourceTree = "<group>"; };
+		FCAB53EC256DE0E00015AAF3 /* ClassicalFractalLattice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassicalFractalLattice.hpp; sourceTree = "<group>"; };
+		FCC3CB0F25802D0100231FF8 /* UnionFind.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnionFind.cpp; sourceTree = "<group>"; };
+		FCC3CB1025802D0200231FF8 /* UnionFind.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UnionFind.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3A3BB2255C990800CCE6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3A3BAC255C990700CCE6A5 = {
+			isa = PBXGroup;
+			children = (
+				FC3A3BB7255C990800CCE6A5 /* decoder */,
+				FC3A3BB6255C990800CCE6A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3A3BB6255C990800CCE6A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3A3BB5255C990800CCE6A5 /* toricdecoder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3A3BB7255C990800CCE6A5 /* decoder */ = {
+			isa = PBXGroup;
+			children = (
+				FC7DFF3725674B52000C468C /* blossom5 */,
+				FC3A3BB8255C990800CCE6A5 /* main.cpp */,
+				FCC3CB0F25802D0100231FF8 /* UnionFind.cpp */,
+				FCC3CB1025802D0200231FF8 /* UnionFind.hpp */,
+				FCAB53E3256DD5B90015AAF3 /* ToricLattice.hpp */,
+				FCAB53EC256DE0E00015AAF3 /* ClassicalFractalLattice.hpp */,
+				FCAB53EB256DE0E00015AAF3 /* ClassicalFractalLattice.cpp */,
+				FCAB53E4256DD5D10015AAF3 /* ToricLattice.cpp */,
+				FCAB53E1256DD0300015AAF3 /* GeneralLattice.hpp */,
+			);
+			path = decoder;
+			sourceTree = "<group>";
+		};
+		FC7DFF3725674B52000C468C /* blossom5 */ = {
+			isa = PBXGroup;
+			children = (
+				FC7DFF3825674B52000C468C /* PMshrink.cpp */,
+				FC7DFF3A25674B52000C468C /* PQ.h */,
+				FC7DFF3B25674B52000C468C /* PMduals.cpp */,
+				FC7DFF3C25674B52000C468C /* misc.cpp */,
+				FC7DFF3D25674B52000C468C /* PMinterface.cpp */,
+				FC7DFF3E25674B52000C468C /* PMexpand.cpp */,
+				FC7DFF5925674DD9000C468C /* MinCost */,
+				FC7DFF3F25674B52000C468C /* timer.h */,
+				FC7DFF4025674B52000C468C /* LCA.h */,
+				FC7DFF4125674B52000C468C /* PMmain.cpp */,
+				FC7DFF4225674B52000C468C /* PMinit.cpp */,
+				FC7DFF4325674B52000C468C /* PMrepair.cpp */,
+				FC7DFF4425674B52000C468C /* block.h */,
+				FC7DFF4525674B52000C468C /* PerfectMatching.h */,
+				FC7DFF4625674B52000C468C /* PMimplementation.h */,
+			);
+			path = blossom5;
+			sourceTree = "<group>";
+		};
+		FC7DFF5925674DD9000C468C /* MinCost */ = {
+			isa = PBXGroup;
+			children = (
+				FC7DFF5A25674DD9000C468C /* instances.inc */,
+				FC7DFF5B25674DD9000C468C /* MinCost.cpp.orig */,
+				FC7DFF5C25674DD9000C468C /* MinCost.cpp.rej */,
+				FC7DFF5D25674DD9000C468C /* MinCost.h */,
+				FC7DFF5E25674DD9000C468C /* MinCost.cpp */,
+				FC7DFF5F25674DD9000C468C /* p */,
+			);
+			path = MinCost;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3A3BB4255C990800CCE6A5 /* toricdecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3A3BBC255C990800CCE6A5 /* Build configuration list for PBXNativeTarget "toricdecoder" */;
+			buildPhases = (
+				FC3A3BB1255C990800CCE6A5 /* Sources */,
+				FC3A3BB2255C990800CCE6A5 /* Frameworks */,
+				FC3A3BB3255C990800CCE6A5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = toricdecoder;
+			productName = toricdecoder;
+			productReference = FC3A3BB5255C990800CCE6A5 /* toricdecoder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3A3BAD255C990800CCE6A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FC3A3BB4255C990800CCE6A5 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = FC3A3BB0255C990800CCE6A5 /* Build configuration list for PBXProject "toricdecoder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3A3BAC255C990700CCE6A5;
+			productRefGroup = FC3A3BB6255C990800CCE6A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3A3BB4255C990800CCE6A5 /* toricdecoder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3A3BB1255C990800CCE6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAB53E9256DDCC00015AAF3 /* ToricLattice.cpp in Sources */,
+				FC7DFF6125674DD9000C468C /* MinCost.cpp in Sources */,
+				FCAB53F0256DE48A0015AAF3 /* ClassicalFractalLattice.cpp in Sources */,
+				FC3A3BB9255C990800CCE6A5 /* main.cpp in Sources */,
+				FC7DFF6025674DD9000C468C /* instances.inc in Sources */,
+				FC7DFF5525674DB6000C468C /* PMshrink.cpp in Sources */,
+				FC7DFF5725674DB8000C468C /* misc.cpp in Sources */,
+				FC7DFF4D25674DA1000C468C /* PMrepair.cpp in Sources */,
+				FCC3CB1125802D0200231FF8 /* UnionFind.cpp in Sources */,
+				FC7DFF5125674DB1000C468C /* PMinterface.cpp in Sources */,
+				FC7DFF4B25674D9E000C468C /* PMinit.cpp in Sources */,
+				FC7DFF4925674D8B000C468C /* PMmain.cpp in Sources */,
+				FC7DFF4F25674DAF000C468C /* PMexpand.cpp in Sources */,
+				FC7DFF5325674DB4000C468C /* PMduals.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC3A3BBA255C990800CCE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/boost/1.74.0/include/;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC3A3BBB255C990800CCE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/boost/1.74.0/include/;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC3A3BBD255C990800CCE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC3A3BBE255C990800CCE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3A3BB0255C990800CCE6A5 /* Build configuration list for PBXProject "toricdecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3A3BBA255C990800CCE6A5 /* Debug */,
+				FC3A3BBB255C990800CCE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3A3BBC255C990800CCE6A5 /* Build configuration list for PBXNativeTarget "toricdecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3A3BBD255C990800CCE6A5 /* Debug */,
+				FC3A3BBE255C990800CCE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3A3BAD255C990800CCE6A5 /* Project object */;
+}
