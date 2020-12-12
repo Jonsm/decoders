@@ -11,6 +11,7 @@
 #include <list>
 #include <chrono>
 #include <fstream>
+#include <string>
 #include <unordered_map>
 #include "blossom5/PerfectMatching.h"
 #include "GeneralLattice.hpp"
@@ -66,6 +67,7 @@ float mcSimulation(int l, int tAnneal, int tSample, int nSamples, float pError) 
     return ((float)nSuccess)/nSamples;
 }
 
+template<class L>
 void writeSimToFile(vector<int> ls, vector<float> pErrors, int nSamples, int annealFactor, int sampleFactor, string filename) {
     ofstream myfile;
     myfile.open(filename);
@@ -86,7 +88,7 @@ void writeSimToFile(vector<int> ls, vector<float> pErrors, int nSamples, int ann
         myfile << l;
         for (float pError : pErrors) {
             cout << l << " " << pError << "\n";
-            float success = mcSimulation<ToricLattice>(l,tAnneal, tSample, nSamples, pError);
+            float success = mcSimulation<L>(l,tAnneal, tSample, nSamples, pError);
             myfile << "," << success;
         }
         myfile << "\n";
@@ -96,41 +98,56 @@ void writeSimToFile(vector<int> ls, vector<float> pErrors, int nSamples, int ann
 }
 
 int main(int argc, const char * argv[]) {
-    ClassicalFractalLattice lattice(5);
-    lattice.flip(11);
-    lattice.flip(12);
-    cout << lattice;
-    lattice.printSyndrome();
-    lattice.checkErrors();
-
-//    UF test(10);
-//    test.merge(1,2);
-//    test.merge(3,4);
-//    test.merge(3,2);
-//    test.merge(5,6);
-//    test.merge(6,7);
-//    test.merge(0,7);
-//    test.merge(7,1);
-//    cout << test.find(7);
+//    ClassicalFractalLattice lattice(8);
+//    lattice.flip(8);
+//    lattice.flip(6);
+//    lattice.flip(10);
+//    lattice.flip(24);
+//    lattice.flip(23);
+////    lattice.flip(25);
+//    lattice.flip(40);
+//    lattice.flip(81);
+//    lattice.flip(65);
+//    lattice.flip(64);
+//    lattice.flip(66);
+    
+//    lattice.flip(8);
+//    lattice.flip(24);
+//    lattice.flip(40);
+//    lattice.flip(56);
+//    lattice.flip(7);
+//    lattice.flip(23);
+//    lattice.flip(39);
+//    lattice.flip(55);
+//    lattice.flip(80);
+//    lattice.flip(64);
+//    lattice.flip(48);
+    
+//    cout << lattice;
+//    cout << "------------\n";
+//    lattice.printSyndrome();
+//    cout << lattice.checkErrors();
+//    cout << "------------\n";
+//    lattice.printCorrection();
     
     /*********MAIN CODE******/
-//    float pMin = .095;
-//    float pMax = .11;
-//    int divs = 7;
-//    int nSamples = 50000;
-//    int annealFactor = 20;
-//    int sampleFactor = 3;
-//    string filename = "/Users/jon/Documents/Research/QI/Python/QEC/test.csv";
-//
-//    vector<int> ls{5,7,9};
-//    vector<float> pErrors(divs);
-//    for (int i = 0 ; i < divs; i++) {
-//        pErrors[i] = pMin + ((pMax - pMin) * i) / (divs - 1);
-//    }
-//
-//    auto t1 = chrono::high_resolution_clock::now();
-//    writeSimToFile(ls, pErrors, nSamples, annealFactor, sampleFactor, filename);
-//    auto t2 = chrono::high_resolution_clock::now();
-//    chrono::duration<double> dur = duration_cast<chrono::duration<double>>(t2 -t1);
-//    cout << dur.count() << "\n";
+    float pMin = .05;
+    float pMax = .2;
+    int divs = 7;
+    int nSamples = 1000;
+    int annealFactor = 20;
+    int sampleFactor = 3;
+    string filename = "test.csv";
+
+    vector<int> ls{4,8,16};
+    vector<float> pErrors(divs);
+    for (int i = 0 ; i < divs; i++) {
+        pErrors[i] = pMin + ((pMax - pMin) * i) / (divs - 1);
+    }
+
+    auto t1 = chrono::high_resolution_clock::now();
+    writeSimToFile<ClassicalFractalLattice>(ls, pErrors, nSamples, annealFactor, sampleFactor, filename);
+    auto t2 = chrono::high_resolution_clock::now();
+    chrono::duration<double> dur = duration_cast<chrono::duration<double>>(t2 -t1);
+    cout << dur.count() << "\n";
 }
